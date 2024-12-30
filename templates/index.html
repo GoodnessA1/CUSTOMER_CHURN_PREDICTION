@@ -1,11 +1,128 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>CUSTOMER CHURN PREDICTION</title>
-        <style>
-        </style>
-    </head>
-    <body>
-        <h1>CUSTOMER CHURN PREDICTION SITE</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER CHURN PREDICTION</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        form {
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+
+        <label for="seniorCitizen">Senior Citizen:</label>
+        <select id="seniorCitizen" name="seniorCitizen">
+            <option value="0">0</option>
+            <option value="1">1</option>
+        </select><br><br>
+
+        <label for="partner">Partner:</label>
+        <select id="partner" name="partner">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="dependents">Dependents:</label>
+        <select id="dependents" name="dependents">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="tenure">Tenure:</label>
+        <input type="number" id="tenure" name="tenure"><br><br>
+
+        <label for="phoneService">Phone Service:</label>
+        <select id="phoneService" name="phoneService">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="multipleLines">Multiple Lines:</label>
+        <select id="multipleLines" name="multipleLines">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="internetService">Internet Service:</label>
+        <select id="internetService" name="internetService">
+            <option value="dsl">DSL</option>
+            <option value="fiber-optic">Fiber optic</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="onlineSecurity">Online Security:</label>
+        <select id="onlineSecurity" name="onlineSecurity">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="onlineBackup">Online Backup:</label>
+        <select id="onlineBackup" name="onlineBackup">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="deviceProtection">Device Protection:</label>
+        <select id="deviceProtection" name="deviceProtection">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="techSupport">Tech Support:</label>
+        <select id="techSupport" name="techSupport">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="streamingTV">Streaming TV:</label>
+        <select id="streamingTV" name="streamingTV">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="streamingMovies">Streaming Movies:</label>
+        <select id="streamingMovies" name="streamingMovies">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="contract">Contract:</label>
+        <select id="contract" name="contract">
+            <option value="monthly">Monthly</option>
+            <option value="one-year">One year</option>
+            <option value="two-year">Two year</option>
+        </select><br><br>
+
+        <label for="paperlessBilling">Paperless Billing:</label>
+        <select id="paperlessBilling" name="paperlessBilling">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+            <option value="manual">Manual</option>
+            <option value="bank-transfer">Bank transfer (automatic)</option>
+            <option value="credit-card">Credit card (automatic)</option>
+        </select><br><br>
+
+        <label for="monthlyCharges">Monthly Charges:</label>
+        <input type="number" id="monthlyCharges" name="monthlyCharges" step="0.01"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
 </html>
